@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: #646262;
+            padding: 10px;
+        }
+        .header {
+            background-color: #646262;
+            background-image: url("head.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+        .nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            color: white;
+            
+        }
+        .sidebar, .main-content {
+            padding: 20px;
+            
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+        .main-content {
+            flex: 2;
+        }
+        .image-placeholder {
+            width: 100%;
+            background: #646262;
+            background-image: url("the_script.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            height: 400px;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">The Man Who Can't Be Moved</div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contacts</a>
+            <a href="#">MissYou</a>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <h2>The Script</h2>
+                <p>The Script are a pop rock band which formed in 2001 in Dublin, Ireland. The band consists of Danny O'Donoghue (vocals), Mark Sheehan (guitar) and Glen Power (drums). After reaching number fifteen in the charts with their 2008 debut single “We Cry,” their second single “The Man Who Can't Be Moved” peaked at number two.</p>
+                <div class="image-placeholder"></div>
+            </div>
+            <div class="main-content">
+                <h2>The Man Who Can't Be Moved</h2>
+                <p>he song was about true emotion and true love and not having, in a day where a lot of people would be able to buy somebody back or give them enough flowers to win them back. What happens to the people who don't have money? What do they do?To do something selfless and to do something that you don't really know and to kind of put it out there with fate. That's what we wanted from the song.</p>
+                <div class="image-placeholder"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
